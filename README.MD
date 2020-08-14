@@ -1,6 +1,6 @@
 *****MPGAN*****
 ---------------
-code for the submission #663: Rethinking Generative Zero-Shot Learning: An Ensemble Learning Perspective for Recognising Visual Patches
+code for the paper in ACM Multimedia 2020: Rethinking Generative Zero-Shot Learning: An Ensemble Learning Perspective for Recognising Visual Patches
 
 *dataset:*
 ---------------
