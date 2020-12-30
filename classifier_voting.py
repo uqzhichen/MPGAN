@@ -183,8 +183,8 @@ class CLASSIFIER:
             end = min(ntest, start+self.batch_size)
             outputs = torch.zeros([end-start, target_classes.size(0)]).cuda()
             weighted_outputs = torch.zeros([end-start, target_classes.size(0)]).cuda()
-            # for num in range(len(self.model)):
-            for num in [1, 2, 3, 4, 5]:
+            for num in range(len(self.model)):
+            # for num in [1, 2, 3, 4, 5]:
                 output = self.model[num](test_X[start:end, num*512:(num+1)*512].cuda())
                 outputs += output
                 weighted_outputs += self.weights[num] * output
